@@ -37,7 +37,7 @@ if(NOT EXISTS ${CMAKE_CURRENT_BINARY_DIR}/CUDF_RAPIDS.cmake)
   if (DEFINED ENV{RAPIDS_CMAKE_SCRIPT_BRANCH})
     set(RAPIDS_CMAKE_SCRIPT_BRANCH "$ENV{RAPIDS_CMAKE_SCRIPT_BRANCH}")
   else()
-    set(RAPIDS_CMAKE_SCRIPT_BRANCH branch-24.06)
+    set(RAPIDS_CMAKE_SCRIPT_BRANCH  fix/hipco_project_name)
   endif()
 
   set(URL "https://raw.githubusercontent.com/ROCm/rapids-cmake/${RAPIDS_CMAKE_SCRIPT_BRANCH}/RAPIDS.cmake")
